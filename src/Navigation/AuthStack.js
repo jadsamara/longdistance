@@ -35,8 +35,8 @@ export const AuthStack = () => {
       initialRouteName="WelcomeScreen"
     >
       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
-      <Stack.Screen name="SignInScreen" component={SigninScreen} />
-      <Stack.Screen name="SignUpScreen" component={SignupScreen} />
+      <Stack.Screen name="SigninScreen" component={SigninScreen} />
+      <Stack.Screen name="SignupScreen" component={SignupScreen} />
     </Stack.Navigator>
   );
 };

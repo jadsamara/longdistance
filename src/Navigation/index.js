@@ -15,15 +15,15 @@ import LottieView from "lottie-react-native";
 
 export const RootNavigator = () => {
   const { user, setUser } = useContext(AuthenticatedUserContext);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    setIsLoading(
-      setInterval(() => {
-        setIsLoading(false);
-      }, 3300)
-    );
-  }, []);
+  // useEffect(() => {
+  //   setIsLoading(
+  //     setInterval(() => {
+  //       setIsLoading(false);
+  //     }, 3300)
+  //   );
+  // }, []);
 
   useEffect(() => {
     const unsubscribeAuth = onAuthStateChanged(
@@ -39,15 +39,15 @@ export const RootNavigator = () => {
     return unsubscribeAuth;
   }, [setUser]);
 
-  if (isLoading) {
-    return (
-      <Container>
-        {/* <LottieContainer>
-          <LottieView source={require("../../baby.json")} autoPlay />
-        </LottieContainer> */}
-      </Container>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <Container>
+  //       <LottieContainer>
+  //         <LottieView source={require("../../baby.json")} autoPlay />
+  //       </LottieContainer>
+  //     </Container>
+  //   );
+  // }
 
   return (
     <NavigationContainer>

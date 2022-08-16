@@ -1,10 +1,13 @@
 import React from "react";
 import { Text, View } from "react-native";
+import styled from "styled-components/native";
 
-export const SignupScreen = () => {
+import { SafeArea } from "../../Components/Reusable/SafeArea";
+
+export const SignupScreen = ({ navigation }) => {
   return (
-    <View>
+    <SafeArea>
       <Text>SignupScreen</Text>
-    </View>
+    </SafeArea>
   );
 };
